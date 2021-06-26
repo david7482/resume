@@ -1,0 +1,19 @@
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+  }
+
+  .resume-wrapper {
+    border: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .resume-body > .row {
+    display: block; // See https://stackoverflow.com/questions/20408033/how-to-get-page-break-inside-avoid-to-work-nicely-with-flex-wrap-wrap
+  }
+
+  section {
+    break-inside: avoid;
+  }
+}
