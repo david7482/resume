@@ -24,6 +24,10 @@ googleAnalytics = "UA-XXXXXXX-Y"
         url = "mailto:david74.chou@gmail.com"
         text = "david74.chou@gmail.com"
         [[params.contact.list]]
+        icon = "fab fa-linkedin"
+        url = "https://www.linkedin.com/in/ting-li-chou-55393662/"
+        text = "Ting-Li Chou"
+        [[params.contact.list]]
         icon = "fab fa-github"
         url = "https://github.com/david7482"
         text = "github.com/david7482"
@@ -42,39 +46,8 @@ googleAnalytics = "UA-XXXXXXX-Y"
     and being driven to keep the company growth via offering compelling new features and services to our customers.
     I am an experienced Golang developer and built several production services in Golang, and a DevOps
     engineer with experience in AWS, Terraform, and Kubernetes. I love to participate in community activities and
-    also share my knowledge with communities. Currently, I am the co-organizer of Golang Taiwan community.
+    also share my knowledge. Currently, I am the co-organizer of Golang Taiwan community.
     """
-
-    [params.skills]
-        enable = true
-
-        [[params.skills.list]]
-        title = "Technical"
-        [[params.skills.list.items]]
-        details = "lala: JavaScript/Angular"
-        [[params.skills.list.items]]
-        details = "Python/Ruby/PHP"
-        [[params.skills.list.items]]
-        details = "Node.js/ASP.NET"
-        [[params.skills.list.items]]
-        details = "PostgreSQL/MySQL"
-        [[params.skills.list.items]]
-        details = "Object-oriented design"
-        [[params.skills.list.items]]
-        details = "Design and implement database structures"
-        [[params.skills.list.items]]
-        details = "Lead and deliver complex software systems"
-
-        [[params.skills.list]]
-        title = "Professional"
-        [[params.skills.list.items]]
-        details = "Effective communication"
-        [[params.skills.list.items]]
-        details = "Team player"
-        [[params.skills.list.items]]
-        details = "Strong problem solver"
-        [[params.skills.list.items]]
-        details = "Good time management"
 
     [params.education]
         enable = true
@@ -181,31 +154,48 @@ googleAnalytics = "UA-XXXXXXX-Y"
         enable = true
 
         [[params.information.list]]
-        title = "Papers"
+        title = "Development"
         [[params.information.list.items]]
-        details = "2018 · Lorem Ipsum"
+        details = "**Languages:** Golang, C/C++, Java, C#"
         [[params.information.list.items]]
-        details = "2016 · Sed Fringilla"
+        details = "**Databases:** MySQL, MongoDB, etcd"
+        [[params.information.list.items]]
+        details = "**Protocols:** HTTP, Websocket, gRPC, SMTP"
 
         [[params.information.list]]
-        title = "Interests"
-        details = "Climbing, Snowboarding, Photography, Travelling"
+        title = "Operations"
+        [[params.information.list.items]]
+        details = "**AWS:** S3, EC2, ECS, EKS, VPC, Cloudfront, Lambda"
+        [[params.information.list.items]]
+        details = "**Container Orchestration:** Kubernetes, ECS"
+        [[params.information.list.items]]
+        details = "**IaC:** Terraform, Helm, Packer, Ansible, Serverless"
+        [[params.information.list.items]]
+        details = "**CI/CD:** Jenkins, Github Action"
+        [[params.information.list.items]]
+        details = "**Logs:** Fluentd, Fluentbit, Elasticsearch, Kibana"
+        [[params.information.list.items]]
+        details = "**Metrics:** Telegraf, Prometheus, Grafana"
 
-    [params.social]
-        enable = true
+        [[params.information.list]]
+        title = "Multimedia"
+        [[params.information.list.items]]
+        details = "**Codecs:** H.264"
+        [[params.information.list.items]]
+        details = "**Container:** MP4, fMP4"
+        [[params.information.list.items]]
+        details = "**Streaming:** RTSP, HLS, DASH"
+        [[params.information.list.items]]
+        details = "**Framework:** FFMPEG, Live555, GStreamer"
+        [[params.information.list.items]]
+        details = "**Acceleration:** DxVA, SIMD"
 
-        [[params.social.list]]
-        icon = "fab fa-github-square"
-        url = "//github.com/username"
-        title = "username"
-        [[params.social.list]]
-        icon = "fab fa-linkedin"
-        url = "//linkedin.com/in/username"
-        title = "username"
-        [[params.social.list]]
-        icon = "fab fa-twitter-square"
-        url = "//twitter.com/username"
-        title = "@username"
+        [[params.information.list]]
+        title = "Others"
+        [[params.information.list.items]]
+        details = "**Source Control:** Git, SVN"
+        [[params.information.list.items]]
+        details = "**Project Management:** JIRA, Trello, Confluence"
 
     [params.footer]
         copyright = "David Chou"
