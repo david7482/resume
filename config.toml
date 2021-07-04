@@ -65,13 +65,13 @@ googleAnalytics = "UA-XXXXXXX-Y"
         enable = true
 
         [[params.awards.list]]
-        name = "Award Lorem Ipsum"
-        body = "Microsoft lorem ipsum"
-        date = "2019"
+        name = "Publications"
+        body = "[Scene change aware intra-frame rate control for H.264/AVC](https://ieeexplore.ieee.org/document/5604298)"
+        date = "IEEE TCSVT, 2010"
         [[params.awards.list]]
-        name = "Award Donec Sodales"
-        body = "Oracle Aenean"
-        date = "2017"
+        name = "Patents"
+        body = "[System and method for streaming media](https://twpat-simple.tipo.gov.tw/tipotwoc/tipotwkm?!!FR_201916664)"
+        date = "Taiwan invention patent"
 
     [params.languages]
         enable = true
