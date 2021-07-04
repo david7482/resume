@@ -136,19 +136,29 @@ googleAnalytics = "UA-XXXXXXX-Y"
         enable = true
 
         [[params.projects.list]]
-        title = "Project Lorem Ipsum"
-        meta = "Open Source"
-        tagline = "You can use this section for your side projects. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+        title = "[lambda-extension-log-shipper](https://github.com/david7482/lambda-extension-log-shipper)"
+        meta = "Golang / Lambda"
+        tagline = "Ship your Lambda logs directly to any destination and bypass Cloudwatch Logs. This is my **personal project** that works like a sidecar of the Lambda function. It would listen to your Lambda function logs via Lambda Logs API, so you could ship the logs to a custom destination without CloudWatch Logs and save cost."
 
         [[params.projects.list]]
-        title = "Project Sed Fringilla"
-        meta = "Open Source"
-        tagline = "You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim."
+        title = "[terraform-provider-aws](https://github.com/hashicorp/terraform-provider-aws)"
+        meta = "Golang / Terraform"
+        tagline = "A well-known terraform plugin to provision AWS resources. I contributed the **EKS taint support** in the Managed Node Group resource."
 
         [[params.projects.list]]
-        title = "Project Praesent"
-        meta = "Open Source"
-        tagline = "You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim."
+        title = "[telegraf](https://github.com/influxdata/telegraf)"
+        meta = "Golang"
+        tagline = "A popular opensource metrics collection agent from influxdata. I contributed a **performance optimization** in its AWS Cloudwatch integration."
+
+        [[params.projects.list]]
+        title = "[go-fluent-ffmpeg](https://github.com/modfy/go-fluent-ffmpeg)"
+        meta = "Golang"
+        tagline = "A Go implementation of fluent-ffmpeg. I submitted a PR to **add context support** into it."
+
+        [[params.projects.list]]
+        title = "[panicwrap](https://github.com/mitchellh/panicwrap)"
+        meta = "Golang"
+        tagline = "A handy library for catching panics in Go applications. I **contributed a fix** to make sure OS signals could be forwarded correctly."
 
     [params.information]
         enable = true
