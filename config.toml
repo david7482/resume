@@ -11,7 +11,7 @@ googleAnalytics = "UA-XXXXXXX-Y"
 
     [params.profile]
         enable = true
-        name = "Ting-Li Chou"
+        name = "David Chou"
         tagline = ""
         avatar = "avatar.png"
 
@@ -37,8 +37,8 @@ googleAnalytics = "UA-XXXXXXX-Y"
         text = "blog.david74.dev"
         [[params.contact.list]]
         icon = "fab fa-slideshare"
-        url = "https://www.slideshare.net/david74chou/presentations"
-        text = "slideshare"
+        url = "https://speakerdeck.com/david74chou"
+        text = "speakerdeck.com/david74chou"
 
     [params.summary]
     enable = true
@@ -87,50 +87,50 @@ googleAnalytics = "UA-XXXXXXX-Y"
         enable = true
 
         [[params.experience.list]]
-        title = "Senior Software Engineer"
-        dates = "2019 - Present"
-        company = "Google"
-        details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis."
+        title = "Developer Team Lead"
+        dates = "2015 - 2021"
+        company = "Umbo"
+        details = "Umbo is an A.I. startup that leverages machine learning and cloud technology to build autonomous video security systems for businesses. As a founding engineer, I involved in the whole architecture design and product implementation from scratch."
         [[params.experience.list.items]]
-        details = "Lorem ipsum dolor sit amet, consectetuer."
+        details = "Led developer team of 8 members. Responsibilities included architecture design, SRE, firmware development, bug fixing, hiring/interview, project management, etc."
         [[params.experience.list.items]]
-        details = "Aenean commodo ligula eget dolor."
+        details = "Designed and implemented the patented streaming technology that aims to provide a low latency streaming in large scale."
         [[params.experience.list.items]]
-        details = "Etiam ultricies nisi vel augue."
+        details = "Developed and maintained the core IoT messaging and streaming services in Golang. Packaged these services into Docker for easier deployment."
+        [[params.experience.list.items]]
+        details = "Involved in camera firmware development. Designed a flexible cross-platform firmware architecture that helps us to deliver different camera models efficiently."
+        [[params.experience.list.items]]
+        details = "Worked on service operation on AWS. Used Packer and Terraform to build infrastructure as code and utilized Ansible for deployment automation. Wrote Jenkinsle to improve CI/CD workflow. Adopted telegraf and grafana for metrics collection and monitoring."
 
         [[params.experience.list]]
-        title = "Lead Software Developer"
-        dates = "2016 - 2019"
-        company = "Apple"
-        details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel."
+        title = "Senior Engineer"
+        dates = "2013 - 2015"
+        company = "Trend Micro Inc."
+        details = "Joined the new industry solution team in the early stage, and experienced the whole product development cycle from planning, development, shipping and maintaince."
         [[params.experience.list.items]]
-        details = "Lorem ipsum dolor sit amet, consectetuer."
+        details = "[Trend Micro Safe Lock](https://www.trendmicro.com/zh_tw/business/products/user-protection/sps/endpoint/safe-lock.html)"
+        [[params.experience.list.items.subs]]
+        details = "A standalone system lockdown software for fixed-function devices."
+        [[params.experience.list.items.subs]]
+        details = "Developed the backend web service via RESTful interface."
         [[params.experience.list.items]]
-        details = "Aenean commodo ligula eget dolor."
+        details = "[Trend Micro Portable Security](https://www.trendmicro.com/ja_jp/business/products/user-protection/sps/endpoint/portable-security-3.html)"
+        [[params.experience.list.items.subs]]
+        details = "A malware scanning and cleanup tool for standalone PC or closed system."
+        [[params.experience.list.items.subs]]
+        details = "Designed and developed this product from the fundamental core module to user interface."
 
         [[params.experience.list]]
-        title = "Senior Software Developer"
-        dates = "2014 - 2016"
-        company = "Dropbox"
-        details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-
-        [[params.experience.list]]
-        title = "Senior Developer"
-        dates = "2013 - 2014"
-        company = "Uber"
-        details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus."
-
-        [[params.experience.list]]
-        title = "Backend Developer"
-        dates = "2014 - 2016"
-        company = "Amazon"
-        details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-
-        [[params.experience.list]]
-        title = "Frontend Developer"
-        dates = "2013 - 2014"
-        company = "Startup"
-        details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus."
+        title = "Senior Engineer"
+        dates = "2009 - 2012"
+        company = "CyberLink Corp."
+        details = "Worked on video decoder and new features development for H.264, MPEG2, and VC1. This is the core module in the company and been integrated into all products."
+        [[params.experience.list.items]]
+        details = "Maintained the quality of video decoder module."
+        [[params.experience.list.items]]
+        details = "Performance tuning with SSE/Intrinsic **SIMD optimization**."
+        [[params.experience.list.items]]
+        details = "Developed hardware decoding for **H.264**, Motion JPEG decoding using **hardware acceleration**."
 
     [params.projects]
         enable = true
@@ -175,7 +175,7 @@ googleAnalytics = "UA-XXXXXXX-Y"
         [[params.information.list]]
         title = "Operations"
         [[params.information.list.items]]
-        details = "**AWS:** S3, EC2, ECS, EKS, VPC, Cloudfront, Lambda"
+        details = "**AWS:** ECS, EKS, SQS, VPC, Lambda, EventBridge, Cloudfront"
         [[params.information.list.items]]
         details = "**Container Orchestration:** Kubernetes, ECS"
         [[params.information.list.items]]

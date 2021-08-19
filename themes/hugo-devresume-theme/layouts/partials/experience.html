@@ -13,7 +13,14 @@
                                         <p>{{ with .details }}{{ . | markdownify }}{{ end }}</p>
                                         <ul class="resume-list">
                                             {{ range .items }}
-                                            <li>{{ with .details }}{{ . | markdownify }}{{ end }}</li>
+                                            <li>
+                                                {{ with .details }}{{ . | markdownify }}{{ end }}
+                                                <ul>
+                                                    {{ range .subs }}
+                                                    <li>{{ with .details }}{{ . | markdownify }}{{ end }}</li>
+                                                    {{ end }}
+                                                </ul>
+                                            </li>
                                             {{ end }}
                                         </ul>
                                     </div>
