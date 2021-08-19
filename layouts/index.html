@@ -36,12 +36,12 @@
                             {{ partial "experience.html" . }}
                             {{ end }}
 
-                            {{ if .Site.Params.information.enable }}
-                            {{ partial "information.html" . }}
-                            {{ end }}
-
                             {{ if .Site.Params.projects.enable }}
                             {{ partial "projects.html" . }}
+                            {{ end }}
+
+                            {{ if .Site.Params.information.enable }}
+                            {{ partial "information.html" . }}
                             {{ end }}
 
                         </div><!--//resume-main-->

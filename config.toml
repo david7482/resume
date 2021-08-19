@@ -1,4 +1,4 @@
-baseURL = "https://me.david74.dev"
+baseURL = "https://me.david74.dev/"
 languageCode = "en"
 title = ""
 theme = "hugo-devresume-theme"
@@ -17,7 +17,6 @@ googleAnalytics = "UA-XXXXXXX-Y"
 
     [params.contact]
         enable = true
-        location = "Taipei, Taiwan"
 
         [[params.contact.list]]
         icon = "fas fa-envelope"
@@ -42,11 +41,13 @@ googleAnalytics = "UA-XXXXXXX-Y"
 
     [params.summary]
     enable = true
-    text = """As a developer team lead of a startup, I lead the team to build our SaaS product from 0 to 1,
-    and being driven to keep the company growth via offering compelling new features and services to our customers.
-    I am an experienced Golang developer and built several production services in Golang, and a DevOps
-    engineer with experience in AWS, Terraform, and Kubernetes. I love to participate in community activities and
-    also share my knowledge. Currently, I am the co-organizer of Golang Taiwan community.
+    text = """As a developer team lead of a startup, I lead the team to build our SaaS product from 0 to 1
+    and is driven to keep the company growing via offering compelling new features and services to our customers.
+    \nI am an experienced Golang developer and built several production services in Golang, and a DevOps engineer
+    with experience in AWS, Terraform, and Kubernetes. To boost the efficiency of the team, I standardized the process
+    of CI/CD, deployment, monitoring, alerting of our services, and build the GitOps culture among members.
+    \nI love to participate in community activities and also share my knowledge with [blogs](https://blog.david74.dev) and
+    [public talks](https://speakerdeck.com/david74chou). Currently, I am the co-organizer of the Golang Taiwan community.
     """
 
     [params.education]
@@ -90,7 +91,7 @@ googleAnalytics = "UA-XXXXXXX-Y"
         title = "Developer Team Lead"
         dates = "2015 - 2021"
         company = "Umbo"
-        details = "Umbo is an A.I. startup that leverages machine learning and cloud technology to build autonomous video security systems for businesses. As a founding engineer, I involved in the whole architecture design and product implementation from scratch."
+        details = "Umbo is an A.I. startup that leverages machine learning and cloud technology to build autonomous video security systems for businesses. As a founding engineer, I participated in the whole architecture design and product implementation from scratch."
         [[params.experience.list.items]]
         details = "Led developer team of 8 members. Responsibilities included architecture design, SRE, firmware development, bug fixing, hiring/interview, project management, etc."
         [[params.experience.list.items]]
@@ -106,7 +107,7 @@ googleAnalytics = "UA-XXXXXXX-Y"
         title = "Senior Engineer"
         dates = "2013 - 2015"
         company = "Trend Micro Inc."
-        details = "Joined the new industry solution team in the early stage, and experienced the whole product development cycle from planning, development, shipping and maintaince."
+        details = "Joined the new industrial control system (ICS) solution team in the early stage, and experienced the whole product development cycle from planning, development, shipping, and maintenance."
         [[params.experience.list.items]]
         details = "[Trend Micro Safe Lock](https://www.trendmicro.com/zh_tw/business/products/user-protection/sps/endpoint/safe-lock.html)"
         [[params.experience.list.items.subs]]
@@ -124,7 +125,7 @@ googleAnalytics = "UA-XXXXXXX-Y"
         title = "Senior Engineer"
         dates = "2009 - 2012"
         company = "CyberLink Corp."
-        details = "Worked on video decoder and new features development for H.264, MPEG2, and VC1. This is the core module in the company and been integrated into all products."
+        details = "I worked on video decoder and new features development for H.264, MPEG2, and VC1. The video decoder is the core module in the company and has been integrated into all products."
         [[params.experience.list.items]]
         details = "Maintained the quality of video decoder module."
         [[params.experience.list.items]]
@@ -150,16 +151,6 @@ googleAnalytics = "UA-XXXXXXX-Y"
         meta = "Golang"
         tagline = "A popular opensource metrics collection agent from influxdata. I contributed a **performance optimization** in its AWS Cloudwatch integration."
 
-        [[params.projects.list]]
-        title = "[go-fluent-ffmpeg](https://github.com/modfy/go-fluent-ffmpeg)"
-        meta = "Golang"
-        tagline = "A Go implementation of fluent-ffmpeg. I submitted a PR to **add context support** into it."
-
-        [[params.projects.list]]
-        title = "[panicwrap](https://github.com/mitchellh/panicwrap)"
-        meta = "Golang"
-        tagline = "A handy library for catching panics in Go applications. I **contributed a fix** to make sure OS signals could be forwarded correctly."
-
     [params.information]
         enable = true
 
@@ -175,7 +166,7 @@ googleAnalytics = "UA-XXXXXXX-Y"
         [[params.information.list]]
         title = "Operations"
         [[params.information.list.items]]
-        details = "**AWS:** ECS, EKS, SQS, VPC, Lambda, EventBridge, Cloudfront"
+        details = "**AWS:** S3, EC2, ECS, EKS, SQS, VPC, IAM, Lambda, EventBridge, Cloudfront, etc"
         [[params.information.list.items]]
         details = "**Container Orchestration:** Kubernetes, ECS"
         [[params.information.list.items]]
