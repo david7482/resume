@@ -1,6 +1,6 @@
 baseURL = "https://me.david74.dev/"
 languageCode = "en"
-title = ""
+title = "David Chou"
 theme = "hugo-devresume-theme"
 googleAnalytics = "UA-XXXXXXX-Y"
 
@@ -45,9 +45,9 @@ googleAnalytics = "UA-XXXXXXX-Y"
     and is driven to keep the company growing via offering compelling new features and services to our customers.
     \nI am an experienced Golang developer and built several production services in Golang, and a DevOps engineer
     with experience in AWS, Terraform, and Kubernetes. To boost the efficiency of the team, I standardized the process
-    of CI/CD, deployment, monitoring, alerting of our services, and build the GitOps culture among members.
+    of CI/CD, deployment, monitoring, alerting of our services, and shaped the DevOps culture among members.
     \nI love to participate in community activities and also share my knowledge with [blogs](https://blog.david74.dev) and
-    [public talks](https://speakerdeck.com/david74chou). Currently, I am the co-organizer of the Golang Taiwan community.
+    [technical talks](https://speakerdeck.com/david74chou). Currently, I am the co-organizer of the Golang Taiwan community.
     """
 
     [params.education]
@@ -91,23 +91,53 @@ googleAnalytics = "UA-XXXXXXX-Y"
         title = "Developer Team Lead"
         dates = "2015 - 2021"
         company = "Umbo"
-        details = "Umbo is an A.I. startup that leverages machine learning and cloud technology to build autonomous video security systems for businesses. As a founding engineer, I participated in the whole architecture design and product implementation from scratch."
+        details = """Umbo is an A.I. startup that leverages machine learning and cloud technology to build
+        autonomous video security systems for businesses. As a founding engineer, I participated in the whole
+        architecture design and product implementation from scratch.
+        """
         [[params.experience.list.items]]
-        details = "Led developer team of 8 members. Responsibilities included architecture design, SRE, firmware development, bug fixing, hiring/interview, project management, etc."
+        details = "Team management"
+        [[params.experience.list.items.subs]]
+        details = """Led developer team of 8 members. Responsibilities included **OKR planning**, **regular 1-1
+        feedback**, performance evaluation, and hiring.
+        """
+        [[params.experience.list.items.subs]]
+        details = """Frequently co-work with Design, Product, and Sales teams to pin down items from product
+        roadmap to feature specs.
+        """
+        [[params.experience.list.items.subs]]
+        details = """Been the **coordinator between the C-level and engineers**; communicated company strategy,
+        product metrics, and individual feedbacks.
+        """
         [[params.experience.list.items]]
-        details = "Designed and implemented the patented streaming technology that aims to provide a low latency streaming in large scale."
+        details = "Engineering"
+        [[params.experience.list.items.subs]]
+        details = """Designed and implemented a patented streaming technology that aims to provide a low latency
+        streaming in large scale.
+        """
+        [[params.experience.list.items.subs]]
+        details = """Developed and maintained the core IoT messaging and streaming services in Golang. Packaged
+        these services into Docker for easier deployment.
+        """
+        [[params.experience.list.items.subs]]
+        details = """Involved in camera firmware development. Designed a flexible cross-platform firmware architecture
+        that helps us to deliver different camera models efficiently.
+        """
         [[params.experience.list.items]]
-        details = "Developed and maintained the core IoT messaging and streaming services in Golang. Packaged these services into Docker for easier deployment."
-        [[params.experience.list.items]]
-        details = "Involved in camera firmware development. Designed a flexible cross-platform firmware architecture that helps us to deliver different camera models efficiently."
-        [[params.experience.list.items]]
-        details = "Worked on service operation on AWS. Used Packer and Terraform to build infrastructure as code and utilized Ansible for deployment automation. Wrote Jenkinsle to improve CI/CD workflow. Adopted telegraf and grafana for metrics collection and monitoring."
+        details = "Infrastructure and process optimization"
+        [[params.experience.list.items.subs]]
+        details = """Worked on service operation on AWS. Used Packer and Terraform to build infrastructure as code and
+        utilized Ansible for deployment automation. Wrote Jenkinsle to improve CI/CD workflow. Adopted telegraf and
+        grafana for metrics collection and monitoring.
+        """
 
         [[params.experience.list]]
         title = "Senior Engineer"
         dates = "2013 - 2015"
         company = "Trend Micro Inc."
-        details = "Joined the new industrial control system (ICS) solution team in the early stage, and experienced the whole product development cycle from planning, development, shipping, and maintenance."
+        details = """Joined the new industrial control system (ICS) solution team in the early stage, and experienced
+        the whole product development cycle from planning, development, shipping, and maintenance.
+        """
         [[params.experience.list.items]]
         details = "[Trend Micro Safe Lock](https://www.trendmicro.com/zh_tw/business/products/user-protection/sps/endpoint/safe-lock.html)"
         [[params.experience.list.items.subs]]
@@ -125,7 +155,9 @@ googleAnalytics = "UA-XXXXXXX-Y"
         title = "Senior Engineer"
         dates = "2009 - 2012"
         company = "CyberLink Corp."
-        details = "I worked on video decoder and new features development for H.264, MPEG2, and VC1. The video decoder is the core module in the company and has been integrated into all products."
+        details = """I worked on video decoder and new features development for H.264, MPEG2, and VC1. The video
+        decoder is the core module in the company and has been integrated into all products.
+        """
         [[params.experience.list.items]]
         details = "Maintained the quality of video decoder module."
         [[params.experience.list.items]]
@@ -139,7 +171,11 @@ googleAnalytics = "UA-XXXXXXX-Y"
         [[params.projects.list]]
         title = "[lambda-extension-log-shipper](https://github.com/david7482/lambda-extension-log-shipper)"
         meta = "Golang / Lambda"
-        tagline = "Ship your Lambda logs directly to any destination and bypass Cloudwatch Logs. This is my **personal project** that works like a sidecar of the Lambda function. It would listen to your Lambda function logs via Lambda Logs API, so you could ship the logs to a custom destination without CloudWatch Logs and save cost."
+        tagline = """Ship your Lambda logs directly to any destination and bypass Cloudwatch Logs. This is my
+        **personal project** that works like a sidecar of the Lambda function. It would listen to your Lambda function
+        logs via Lambda Logs API, so you could ship the logs to a custom destination without CloudWatch Logs
+        and **save cost**.
+        """
 
         [[params.projects.list]]
         title = "[terraform-provider-aws](https://github.com/hashicorp/terraform-provider-aws)"
