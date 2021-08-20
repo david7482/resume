@@ -7,7 +7,7 @@
                                     {{ range .Site.Params.awards.list }}
                                     <li class="mb-3">
                                         <div class="font-weight-bold">{{ .name }}</div>
-                                        <div class="resume-awards-content text-muted">{{ .body | markdownify }}</div>
+                                        <div class="resume-awards-content text-muted">{{ .body | $.Page.RenderString }}</div>
                                         <div class="resume-awards-time text-muted">{{ .date }}</div>
                                     </li>
                                     {{ end }}

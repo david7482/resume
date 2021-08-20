@@ -8,7 +8,7 @@
                         {{ end }}
 
                         <div class="media-body text-left">
-                            <p class="mb-0">{{ .Site.Params.summary.text | markdownify }}</p>
+                            <p class="mb-0">{{ .Site.Params.summary.text | $.Page.RenderString }}</p>
                         </div><!--//media-body-->
 
                     </div>

@@ -14,7 +14,7 @@
                                         <ul class="resume-list">
                                             {{ range .items }}
                                             <li>
-                                                {{ with .details }}{{ . | markdownify }}{{ end }}
+                                                {{ with .details }}{{ . | $.Page.RenderString }}{{ end }}
                                                 <ul>
                                                     {{ range .subs }}
                                                     <li>{{ with .details }}{{ . | markdownify }}{{ end }}</li>
