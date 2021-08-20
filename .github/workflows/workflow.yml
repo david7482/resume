@@ -29,3 +29,6 @@ jobs:
       - name: Build
         run: make build
 
+      - name: Deploy
+        run: make deploy
+

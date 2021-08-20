@@ -1,5 +1,7 @@
 all: run
 
+CLOUDFRONT_ID="EY29JVG4HSFOH"
+
 clean:
 	rm -rf public/ resources/
 
@@ -9,5 +11,6 @@ run:
 build:
 	hugo --minify
 
-s3: build
+deploy: build
 	aws s3 sync ./public s3://david74-resume --delete
+	aws cloudfront create-invalidation --distribution-id $(CLOUDFRONT_ID) --paths '/index.html'
