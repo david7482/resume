@@ -13,6 +13,7 @@ googleAnalytics = "UA-XXXXXXX-Y"
         enable = true
         name = "David Chou"
         tagline = ""
+        description = "Golang developer, DevOps engineer, Community participant"
         avatar = "avatar.png"
 
     [params.contact]
