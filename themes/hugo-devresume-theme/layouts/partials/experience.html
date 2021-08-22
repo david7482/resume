@@ -11,7 +11,7 @@
                                     </div>
                                     <div class="item-content">
                                         <p>{{ with .details }}{{ . | markdownify }}{{ end }}</p>
-                                        <ul class="resume-list">
+                                        <ul class="resume-experience-list">
                                             {{ range .items }}
                                             <li>
                                                 {{ with .details }}{{ . | $.Page.RenderString }}{{ end }}

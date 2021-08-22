@@ -42,7 +42,7 @@ googleAnalytics = "UA-XXXXXXX-Y"
     [params.summary]
     enable = true
     text = """As a developer team lead of a startup, I lead the team to build our SaaS product from 0 to 1
-    and is driven to keep the company growing via offering compelling new features and services to our customers.
+    and is driven to keep the company growing by offering compelling new features and services to our customers.
     \nI am an experienced Golang developer and built several production services in Golang, and a DevOps engineer
     with experience in AWS, Terraform, and Kubernetes. To boost the efficiency of the team, I standardized the process
     of CI/CD, deployment, monitoring, alerting of our services, and shaped the DevOps culture among members.
@@ -98,37 +98,67 @@ googleAnalytics = "UA-XXXXXXX-Y"
         [[params.experience.list.items]]
         details = "Team management"
         [[params.experience.list.items.subs]]
-        details = """Led developer team of 8 members. Responsibilities included **OKR planning**, **regular 1-1
-        feedback**, performance evaluation, and hiring.
+        details = """**Led developer team of 8 members**. My responsibilities included OKR planning, regular 1-1
+        feedback, mentoring, sponsoring, and hiring.
         """
         [[params.experience.list.items.subs]]
-        details = """Frequently co-work with Design, Product, and Sales teams to pin down items from product
-        roadmap to feature specs.
+        details = """**Frequently co-worked with different teams**, such as Design, Product, ML and Sales teams, to discuss
+        items from product roadmap, feature specs to customer complains and service integration details.
         """
         [[params.experience.list.items.subs]]
-        details = """Been the **coordinator between the C-level and engineers**; communicated company strategy,
-        product metrics, and individual feedbacks.
+        details = """**Focused on increasing team-wise productivity** by standardlizing development flow, introducing CI/CD
+        and unit testing, consistent service deployment flow, shaping DevOps culture, etc.
         """
         [[params.experience.list.items]]
-        details = "Engineering"
+        details = "Architect and engineering"
         [[params.experience.list.items.subs]]
-        details = """Designed and implemented a patented streaming technology that aims to provide a low latency
-        streaming in large scale.
+        details = """Designed and developed a **low latency video streaming service** in Golang on a large scale
+        across multiple regions. It became the core architecture of Umbo's streaming-based product and served more
+        than 7500 online cameras with below 3 seconds end-to-end latency.
         """
         [[params.experience.list.items.subs]]
-        details = """Developed and maintained the core IoT messaging and streaming services in Golang. Packaged
-        these services into Docker for easier deployment.
+        details = """Developed and maintained the core **IoT messaging service** in Golang. Packaged with Docker and
+        deployed with Ansible. It provided real-time communication with devices by WebSocket and served all Umbo's
+        cameras across 4 different regions.
         """
         [[params.experience.list.items.subs]]
-        details = """Involved in camera firmware development. Designed a flexible cross-platform firmware architecture
-        that helps us to deliver different camera models efficiently.
+        details = """Involved in **firmware architecture design and development**, including firmware services, IPC protocol,
+        and service configuration. Designed a flexible cross-platform firmware architecture that helps us to deliver
+        different camera models efficiently.
+        """
+        [[params.experience.list.items.subs]]
+        details = """Developed a **Windows-based service** in Golang. It bridged Umbo alerts into 3rd-party systems under
+        a constrained network environment. I packaged the installation process into wizard that set up auto-start,
+        restart-on-failure, and log sidecar. This project helped Umbo win 2 enterprise customers.
+        """
+        [[params.experience.list.items.subs]]
+        details = """Involved in the design and development of Umbo’s **Event-Filter product**. Event-Filter is aimed to
+        optimize customer’s human resources by filtering out false alerts generated from their own devices.
+        I implemented **2 gateway services (SMTP and HTTP)** in Golang and deployed them to ECS Fargate with Terraform.
+        As a result, Event-Filter reduced 83% of false alarms for customers and boosted Umbo’s monthly recurring
+        revenue (MRR) by 230% in a year.
         """
         [[params.experience.list.items]]
         details = "Infrastructure and process optimization"
         [[params.experience.list.items.subs]]
-        details = """Worked on service operation on AWS. Used Packer and Terraform to build infrastructure as code and
-        utilized Ansible for deployment automation. Wrote Jenkinsle to improve CI/CD workflow. Adopted telegraf and
-        grafana for metrics collection and monitoring.
+        details = """**Standardlized Umbo’s production service deployment** by using AWS ECS Fargate and Terraform. With
+        this consistent setup, different services would use the same way for secret management, log collection, monitoring,
+        tracing, etc. It drastically reduced the loading of operation and speeded up the launch of new services by 300%.
+        """
+        [[params.experience.list.items.subs]]
+        details = """Led and supported the team to continuously **reduce AWS infrastructure costs**. I regularly reviewed AWS cost analysis
+        and proposed different approaches for cost reduction, including NAT traffic reduction, EC2/Fargate Spot adoption,
+        EC2 ARM instance adoption, cross-zone traffic reduction, S3 lifecycle optimization, etc. As a result, we reduced
+        54% unit cost by average.
+        """
+        [[params.experience.list.items.subs]]
+        details = """**Migrated Umbo's internal services to EKS** by using Terraform and Helm. The internal services included
+        Grafana, Fluentd aggregator, Metabase, ETL jobs, etc. I also **optimized the performance of the log collection pipeline**
+        by fine-tuning Fluentd and ElasticSearch.
+        """
+        [[params.experience.list.items.subs]]
+        details = """Led and supported the team to **build a cross-services tracing solution** by leveraging NewRelic tracing service.
+        It gave us a clear view of end-to-end latency, and we built monitoring and alerting based on the metrics.
         """
 
         [[params.experience.list]]
@@ -143,7 +173,7 @@ googleAnalytics = "UA-XXXXXXX-Y"
         [[params.experience.list.items.subs]]
         details = "A standalone system lockdown software for fixed-function devices."
         [[params.experience.list.items.subs]]
-        details = "Developed the backend web service via RESTful interface."
+        details = "Developed the backend REST API service."
         [[params.experience.list.items]]
         details = "[Trend Micro Portable Security](https://www.trendmicro.com/ja_jp/business/products/user-protection/sps/endpoint/portable-security-3.html)"
         [[params.experience.list.items.subs]]
@@ -173,19 +203,23 @@ googleAnalytics = "UA-XXXXXXX-Y"
         meta = "Golang / Lambda"
         tagline = """Ship your Lambda logs directly to any destination and bypass Cloudwatch Logs. This is my
         **personal project** that works like a sidecar of the Lambda function. It would listen to your Lambda function
-        logs via Lambda Logs API, so you could ship the logs to a custom destination without CloudWatch Logs
+        logs by Lambda Logs API, so you could ship the logs to a custom destination without CloudWatch Logs
         and **save cost**.
         """
 
         [[params.projects.list]]
         title = "[terraform-provider-aws](https://github.com/hashicorp/terraform-provider-aws)"
         meta = "Golang / Terraform"
-        tagline = "A well-known terraform plugin to provision AWS resources. I contributed the **EKS taint support** in the Managed Node Group resource."
+        tagline = """A well-known terraform plugin to provision AWS resources. I contributed the **EKS taint support**
+        in the Managed Node Group resource.
+        """
 
         [[params.projects.list]]
         title = "[telegraf](https://github.com/influxdata/telegraf)"
         meta = "Golang"
-        tagline = "A popular opensource metrics collection agent from influxdata. I contributed a **performance optimization** in its AWS Cloudwatch integration."
+        tagline = """A popular opensource metrics collection agent from influxdata. I contributed a **performance optimization**
+        in its AWS Cloudwatch integration.
+        """
 
     [params.information]
         enable = true
@@ -232,7 +266,9 @@ googleAnalytics = "UA-XXXXXXX-Y"
         [[params.information.list.items]]
         details = "**Source Control:** Git, SVN"
         [[params.information.list.items]]
-        details = "**Project Management:** JIRA, Trello, Confluence"
+        details = "**Build System:** Make, CMake"
+        [[params.information.list.items]]
+        details = "**Project Management:** JIRA, Confluence, Trello"
 
     [params.footer]
         copyright = "David Chou"

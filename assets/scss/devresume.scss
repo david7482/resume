@@ -33,6 +33,10 @@ $theme-colors: (
   "secondary":  $theme-text-color-secondary,
 );
 
+$container-max-widths: (
+  xl: 1240px
+);
+
 /*************************** Import Bootstrap  *****************************/
 @import "bootstrap/scss/bootstrap.scss";
 
@@ -40,6 +44,8 @@ $theme-colors: (
 /*************************** DevResume Styles ****************************/
 
 /*********** Theme Generic **********/
+
+
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -139,7 +145,7 @@ a.resume-link {
 }
 
 .resume-intro {
-	font-size: 0.875rem;
+	font-size: 0.9rem;
 }
 .resume-main {
 	.item-title {
@@ -152,10 +158,10 @@ a.resume-link {
     }
 
    .item-meta {
-	   font-size: 0.75rem;
+	   font-size: 0.85rem;
    }
    .item-content {
-		font-size: 0.875rem;
+		font-size: 0.9rem;
 	}
 }
 
@@ -184,13 +190,22 @@ a.resume-link {
   flex: 1;
 }
 
+.resume-experience-list {
+    font-size: 0.9rem;
+    ul {
+        margin-top: 5px;
+    }
+    li {
+        margin-bottom: 5px;
+    }
+}
 
 .resume-education-list, .resume-awards-list {
     font-size: 0.875rem;
 }
 
 .resume-degree-time-org, .resume-degree-time, .resume-awards-time, .resume-awards-content {
-	font-size: 0.75rem;
+	font-size: 0.875rem;
 }
 
 .resume-lang-list, .resume-interests-list {
@@ -198,7 +213,7 @@ a.resume-link {
 }
 
 .resume-social-list {
-	font-size: 0.75rem;
+	font-size: 0.875rem;
 }
 
 
