@@ -96,70 +96,85 @@ googleAnalytics = "UA-XXXXXXX-Y"
         autonomous video security systems for businesses. As a founding engineer, I participated in the whole
         architecture design and product implementation from scratch.
         """
+
         [[params.experience.list.items]]
         details = "Team management"
         [[params.experience.list.items.subs]]
-        details = """**Led developer team of 8 members**. My responsibilities included OKR planning, regular 1-1
-        feedback, mentoring, sponsoring, and hiring.
+        details = """**Led engineering team of 8 members**
+        \nMy responsibilities included OKR planning, regular 1-1 feedback, mentoring, sponsoring, and hiring. I committed
+        to build a responsible, transparent and keep-learning engineering team.
         """
         [[params.experience.list.items.subs]]
-        details = """**Frequently co-worked with different teams**, such as Design, Product, ML and Sales teams, to discuss
-        items from product roadmap, feature specs to customer complains and service integration details.
+        details = """**Focused on team-wise productivity improvement**
+        \nI standardized the development flow, introducing CI/CD and unit testing, adopting Infrastructure-as-code, and
+        shaping DevOps culture in the team.
         """
         [[params.experience.list.items.subs]]
-        details = """**Focused on increasing team-wise productivity** by standardlizing development flow, introducing CI/CD
-        and unit testing, consistent service deployment flow, shaping DevOps culture, etc.
+        details = """**Cross-team collaboration**
+        \nI frequently co-worked with different teams, such as Design, Product, FAE and Sales teams, to help them from
+        different approaches, such as studying competitor's solution, discussing product roadmap, joining customer
+        concalls, and solving technical issues, etc.
         """
+
         [[params.experience.list.items]]
         details = "Architect and engineering"
         [[params.experience.list.items.subs]]
-        details = """Designed and developed a **low latency video streaming service** in Golang on a large scale
-        across multiple regions. It became the core architecture of Umbo's streaming-based product and served more
-        than 7500 online cameras with below 3 seconds end-to-end latency.
+        details = """**Low latency video streaming service (Golang)**
+        \nDesigned and developed Umbo's video streaming service on a large scale across multiple regions. It became
+        the core architecture of Umbo's streaming-based product and served more than 7500 online cameras with below
+        3 seconds end-to-end latency.
         """
         [[params.experience.list.items.subs]]
-        details = """Developed and maintained the core **IoT messaging service** in Golang. Packaged with Docker and
-        deployed with Ansible. It provided real-time communication with devices by WebSocket and served all Umbo's
-        cameras across 4 different regions.
+        details = """**IoT messaging service (Golang)**
+        \nDeveloped and maintained the core messaging service that provided real-time communication across devices by WebSocket
+        and served all Umbo's cameras across 4 different regions.
         """
         [[params.experience.list.items.subs]]
-        details = """Involved in **firmware architecture design and development**, including firmware services, IPC protocol,
-        and service configuration. Designed a flexible cross-platform firmware architecture that helps us to deliver
+        details = """**Firmware applications development (C/C++)**
+        \nInvolved in firmware architecture design and development, such as firmware application, designing IPC protocol
+        and service configuration, etc. Designed a flexible cross-platform firmware architecture that helps us to deliver
         different camera models efficiently.
         """
         [[params.experience.list.items.subs]]
-        details = """Developed a **Windows-based service** in Golang. It bridged Umbo alerts into 3rd-party systems under
-        a constrained network environment. I packaged the installation process into wizard that set up auto-start,
-        restart-on-failure, and log sidecar. This project helped Umbo win 2 enterprise customers.
+        details = """**Windows-based service development (Golang)**
+        \nDeveloped a Windows background service that bridged Umbo alerts into 3rd-party systems under a constrained network
+        environment. I packaged the installation process into wizard that set up auto-start, restart-on-failure, and
+        log collection sidecar. This project helped Umbo win 2 enterprise customers.
         """
         [[params.experience.list.items.subs]]
-        details = """Involved in the design and development of Umbo’s **Event-Filter product**. Event-Filter is aimed to
-        optimize customer’s human resources by filtering out false alerts generated from their own devices.
-        I implemented **2 gateway services (SMTP and HTTP)** in Golang and deployed them to ECS Fargate with Terraform.
-        As a result, Event-Filter reduced 83% of false alarms for customers and boosted Umbo’s monthly recurring
-        revenue (MRR) by 230% in a year.
+        details = """**Launch a new product - Event Filter (Golang)**
+        \nInvolved in the completed product launch lifecycle from market research, competitor studying, product
+        design, development, and launching. Engineering-wise, I implemented 2 gateway services (SMTP and HTTP) and
+        deployed them to ECS Fargate with Terraform. As a result, Event-Filter reduced 83% of false alarms for customers
+        and boosted Umbo’s monthly recurring revenue (MRR) by 230% in a year.
         """
+
         [[params.experience.list.items]]
         details = "Infrastructure and process optimization"
         [[params.experience.list.items.subs]]
-        details = """**Standardlized Umbo’s production service deployment** by using AWS ECS Fargate and Terraform. With
-        this consistent setup, different services would use the same way for secret management, log collection, monitoring,
-        tracing, etc. It drastically reduced the loading of operation and speeded up the launch of new services by 300%.
+        details = """**Standardlized production service deployment**
+        \n I standardlized a consistent service deployment by using AWS ECS Fargate and Terraform. Different services
+        could use the same way for secret management, log collection, monitoring, tracing, etc. It drastically reduced
+        the loading of operation and speeded up the launch of new services by 300%.
         """
         [[params.experience.list.items.subs]]
-        details = """Led and supported the team to continuously **reduce AWS infrastructure costs**. I regularly reviewed AWS cost analysis
-        and proposed different approaches for cost reduction, including NAT traffic reduction, EC2/Fargate Spot adoption,
+        details = """**Cross-services tracing solution**
+        \nLed and supported the team to build a cross-services tracing by leveraging NewRelic tracing service. It gave
+        us a clear view of end-to-end latency, and we built monitoring and alerting based on the metrics.
+        """
+        [[params.experience.list.items.subs]]
+        details = """**Reduce AWS infrastructure costs**
+        \nLed and supported the team to continuously reduce AWS costs. I regularly reviewed AWS cost analysis and proposed
+        different approaches for cost reduction, including NAT traffic reduction, EC2/Fargate Spot adoption,
         EC2 ARM instance adoption, cross-zone traffic reduction, S3 lifecycle optimization, etc. As a result, we reduced
         54% unit cost by average.
         """
         [[params.experience.list.items.subs]]
-        details = """**Migrated Umbo's internal services to EKS** by using Terraform and Helm. The internal services included
-        Grafana, Fluentd aggregator, Metabase, ETL jobs, etc. I also **optimized the performance of the log collection pipeline**
-        by fine-tuning Fluentd and ElasticSearch.
-        """
-        [[params.experience.list.items.subs]]
-        details = """Led and supported the team to **build a cross-services tracing solution** by leveraging NewRelic tracing service.
-        It gave us a clear view of end-to-end latency, and we built monitoring and alerting based on the metrics.
+        details = """**AWS infrastructure administration**
+        \nAs an AWS architect of the team, I managed shared infrastructure, such as IAM, VPC, purchasing RI/saving plan,
+        building common AMI, etc. I migrated internal services (e.g., Grafana, Metabase, ETL jobs, etc) to EKS by using
+        Terraform and Helm. I also optimized the performance of the log collection pipeline by fine-tuning Fluentd
+        aggregator and ElasticSearch.
         """
 
         [[params.experience.list]]
