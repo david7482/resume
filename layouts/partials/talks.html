@@ -1,0 +1,20 @@
+
+                            <section class="project-section py-3">
+
+                                <h3 class="text-uppercase resume-section-heading mb-4">{{ i18n "talks" }}</h3>
+
+                                <div class="media-body text-left">
+                                    <p class="item-content">{{ .Site.Params.talks.details | $.Page.RenderString }}</p>
+                                </div><!--//media-body-->
+
+                                <div class="item-content">
+                                    <ul class="resume-experience-list">
+                                        {{ range .Site.Params.talks.list }}
+                                        <li>
+                                            {{ with .details }}{{ . | $.Page.RenderString }}{{ end }}
+                                        </li>
+                                        {{ end }}
+                                    </ul>
+                                </div>
+
+                            </section>

@@ -42,7 +42,7 @@ googleAnalytics = "UA-XXXXXXX-Y"
 
     [params.summary]
     enable = true
-    text = """As a developer team lead of a startup, I lead the team to build our SaaS product from 0 to 1
+    text = """As an engineering team lead of a startup, I lead the team to build our SaaS product from 0 to 1
     and is driven to keep the company growing by offering compelling new features and services to our customers.
     \nI am an experienced Golang developer and built several production services in Golang, and a DevOps engineer
     with experience in AWS, Terraform, and Kubernetes. To boost the efficiency of the team, I standardized the process
@@ -89,12 +89,14 @@ googleAnalytics = "UA-XXXXXXX-Y"
         enable = true
 
         [[params.experience.list]]
-        title = "Developer Team Lead"
+        title = "Engineering Team Lead"
         dates = "2015 - 2021"
         company = "Umbo"
         details = """Umbo is an A.I. startup that leverages machine learning and cloud technology to build
         autonomous video security systems for businesses. As a founding engineer, I participated in the whole
-        architecture design and product implementation from scratch.
+        architecture design and product implementation from scratch. As an engineering team lead, I mentored, sponsored
+        and supported my members by shaping Umbo engineering culture. As a cloud architect, I committed to optimize
+        infrastructure and improve work flow.
         """
 
         [[params.experience.list.items]]
@@ -106,13 +108,13 @@ googleAnalytics = "UA-XXXXXXX-Y"
         """
         [[params.experience.list.items.subs]]
         details = """**Focused on team-wise productivity improvement**
-        \nI standardized the development flow, introducing CI/CD and unit testing, adopting Infrastructure-as-code, and
+        \nStandardized the development flow, introducing CI/CD and unit testing, adopting Infrastructure-as-code, and
         shaping DevOps culture in the team.
         """
         [[params.experience.list.items.subs]]
         details = """**Cross-team collaboration**
-        \nI frequently co-worked with different teams, such as Design, Product, FAE and Sales teams, to help them from
-        different approaches, such as studying competitor's solution, discussing product roadmap, joining customer
+        \nFrequently co-worked with different teams, such as Design, Product and Sales, to help them from
+        different approaches, such as studying competitor, discussing product roadmap, joining customer
         concalls, and solving technical issues, etc.
         """
 
@@ -153,7 +155,7 @@ googleAnalytics = "UA-XXXXXXX-Y"
         details = "Infrastructure and process optimization"
         [[params.experience.list.items.subs]]
         details = """**Standardlized production service deployment**
-        \n I standardlized a consistent service deployment by using AWS ECS Fargate and Terraform. Different services
+        \n Standardlized a consistent service deployment by using AWS ECS Fargate and Terraform. Different services
         could use the same way for secret management, log collection, monitoring, tracing, etc. It drastically reduced
         the loading of operation and speeded up the launch of new services by 300%.
         """
@@ -236,6 +238,28 @@ googleAnalytics = "UA-XXXXXXX-Y"
         tagline = """A popular opensource metrics collection agent from influxdata. I contributed a **performance optimization**
         in its AWS Cloudwatch integration.
         """
+
+    [params.talks]
+        enable = true
+        details = """Given technical talks in several meetups and conferences, such as COSCUP, Google I/O Extended Taipei,
+        iThome Gopher Day, Golang Taipei Meetup, and Taiwan Streaming Meetup, topics including golang, software testing,
+        centralized logging, and video codec. Slides: https://speakerdeck.com/david74chou
+        """
+
+        [[params.talks.list]]
+        details="Fuzzy test in Go @ COSCUP 2021"
+        [[params.talks.list]]
+        details="Let's talk about testing in Go @ COSCUP 2020"
+        [[params.talks.list]]
+        details="Centralized Logging Solution using FireLens and Fluent Bit for ECS @ AWS Workshop 2020"
+        [[params.talks.list]]
+        details="How the Go runtime implement map efficiently @ Golang Taipei Meetup 2018"
+        [[params.talks.list]]
+        details="AV1: The next generation video codec @ Taiwan Streaming Meetup 2018"
+        [[params.talks.list]]
+        details="Golang execution modes @ iThome Gopher Day 2017"
+        [[params.talks.list]]
+        details="Building microservice with gRPC in Golang @ Google I/O Extended Taipei 2017"
 
     [params.information]
         enable = true
