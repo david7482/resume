@@ -1,0 +1,311 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.65in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.29in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+% \setlength{\parskip}{0.5em}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubItem}[1]{
+	\item[$\circ$]\small{
+    	{#1 \vspace{-2pt}}
+	}
+}
+
+\newcommand{\resumeSubSubItem}[2]{
+	\item[$\circ$]\small{
+    	\textbf{#1} \\
+    	{#2}
+	}
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+      {#1} & \small{#2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubSubheading}[3]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3}  \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[1]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://me.david74.dev}{\LARGE David Chou}} &  \href{mailto:david74.chou@gmail.com}{\raisebox{-0.1\height}\faEnvelope\ \small david74.chou@gmail.com}\\
+  \href{https://me.david74.dev}{https://me.david74.dev} & \href{https://github.com/david7482}{\raisebox{-0.1\height}\faGithub\ \small github.com/david7482} \\
+  & \href{https://blog.david74.dev/}{\raisebox{-0.1\height}\faMedium\ \small blog.david74.dev} \\
+  & \href{https://www.linkedin.com/in/ting-li-chou-55393662/}{\raisebox{-0.1\height}\faLinkedin\ \small Ting-Li Chou} \\
+\end{tabular*}
+
+%-----------SUMMARY-----------
+\vspace{-20pt}
+\section{Summary}
+{\small As an engineering team lead of a startup, I lead the team to build our SaaS product from 0 to 1 and is driven to keep the company growing by offering compelling new features and services to our customers.\par
+\medskip
+I am an experienced Golang developer and built several production services in Golang, and a DevOps engineer with experience in AWS, Terraform, and Kubernetes. To boost the efficiency of the team, I standardized the process of CI/CD, deployment, monitoring, alerting of our services, and shaped the DevOps culture among members.\par
+\medskip
+I love to participate in community activities and also share my knowledge with blogs and technical talks. Currently, I am the co-organizer of the Golang Taiwan community.}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubSubSubheading
+      {Umbo Computer Vision Inc.}{2015 - 2021}
+      {Engineering Team Lead}
+      \resumeItemListStart
+        \resumeItem{\normalsize Team management}
+            \resumeItemListStart
+                \resumeSubSubItem{Led engineering team of 8 members}{My responsibilities included OKR planning, regular
+                1-1 feedback, mentoring, sponsoring, and hiring. I committed to build a responsible, transparent and
+                keep-learning engineering team.}
+                \resumeSubSubItem{Focused on team-wise productivity improvement}{Standardized the development flow,
+                introducing CI/CD and unit testing, adopting Infrastructure-as-code, and shaping DevOps culture in the team.}
+                \resumeSubSubItem{Cross-team collaboration}{Frequently co-worked with different teams, such as Design,
+                Product and Sales, to help them from different approaches, such as studying competitor, discussing product
+                roadmap, joining customer concalls, etc.}
+            \resumeItemListEnd
+        \resumeItem{\normalsize Architect and engineering}
+            \resumeItemListStart
+                \resumeSubSubItem{Low latency video streaming service (Golang)}{Designed and developed Umbo’s video streaming service on a large scale across multiple regions. It was the core architecture of Umbo and served more than 7500 cameras with below 3 seconds latency.}
+                \resumeSubSubItem{IoT messaging service (Golang)}{Developed and maintained the core messaging service that provided real-time communication across devices by WebSocket and served all Umbo’s cameras across 4 different regions.}
+                \resumeSubSubItem{Launch a new product - Event Filter (Golang)}{Involved in the completed product lifecycle from market research, competitor studying, product design, development, and launching. Engineering-wise, I implemented 2 gateway services (SMTP and HTTP) and deployed to ECS Fargate with Terraform. As a result, it reduced 83\% of false alarms for customers and boosted Umbo’s monthly recurring revenue (MRR) by 230\%.}
+                \resumeSubSubItem{Firmware applications development (C/C++)}{Involved in firmware architecture design and
+                development, such as firmware application, designing IPC protocol and service configuration, etc. Designed
+                a flexible cross-platform firmware architecture that helps us to deliver different camera models efficiently.}
+            \resumeItemListEnd
+        \resumeItem{\normalsize Infrastructure and process optimization}
+            \resumeItemListStart
+                \resumeSubSubItem{Standardlized production service deployment}{Standardlized a consistent service deployment
+                by using AWS ECS Fargate and Terraform. Different services could use the same way for secret management,
+                log collection, monitoring, tracing, etc. It drastically reduced the loading of operation and speeded up
+                the launch of new services by 300\%.}
+                \resumeSubSubItem{Cross-services tracing solution}{Led and supported the team to build a cross-services tracing
+                by leveraging NewRelic tracing service. It gave us a clear view of end-to-end latency, and we built monitoring
+                and alerting based on the metrics.}
+                \resumeSubSubItem{Optimize AWS infrastructure costs}{Led and supported the team to continuously optimize AWS costs. I regularly reviewed AWS cost analysis and proposed different approaches, including EC2/Fargate Spot and ARM instance adoption, NAT and cross-zone traffic reduction, S3 lifecycle optimization. As a result, we reduced 54\% AWS system cost under the same business scale.}
+                \resumeSubSubItem{Internal infrastructure administration}{As an AWS architect of the team, I managed shared resources, such as IAM, VPC, purchasing RI/saving plan, building common AMI. I migrated internal services (e.g., Grafana, Sentry, ETL jobs) to EKS by using Terraform and Helm. I also optimized the performance of the log collection pipeline by fine-tuning Fluentd aggregator and ElasticSearch.}
+            \resumeItemListEnd
+      \resumeItemListEnd
+
+    \resumeSubSubSubheading
+      {Trend Micro Inc.}{2013 -- 2015}
+      {Senior Engineer}
+      \resumeItemListStart
+        \resumeItem{Trend Micro Safe Lock}
+        	\resumeItemListStart
+            	\resumeSubItem{A standalone system lockdown software for fixed-function devices.}
+                \resumeSubItem{Developed the backend REST API service.}
+            \resumeItemListEnd
+        \resumeItem{Trend Micro Portable Security}
+        	\resumeItemListStart
+            	\resumeSubItem{A malware scanning and cleanup tool for standalone PC or closed system.}
+                \resumeSubItem{Designed and developed this product from the fundamental core module to user interface.}
+            \resumeItemListEnd
+    \resumeItemListEnd
+
+    \resumeSubSubSubheading
+      {CyberLink Corp.}{2009 -- 2012}
+      {Senior Engineer}
+      \resumeItemListStart
+        \resumeItem{Worked on video decoder and new features development for H.264, MPEG2, and VC1.}
+        \resumeItem{Performance tuning with SSE/Intrinsic SIMD optimization.}
+        \resumeItem{Developed hardware decoding for H.264, Motion JPEG decoding using hardware acceleration.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\vspace{-15pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubSubSubheading
+      {National Chiao Tung University}{2007 -- 2009}
+      {M.S in Computer Science}
+    \resumeSubSubSubheading
+      {National Chiao Tung University}{2003 -- 2007}
+      {B.S in Computer Science}
+  \resumeSubHeadingListEnd
+
+%-----------INVOLVEMENT---------------
+\section{Technical Talks}
+    \resumeSubHeadingListStart
+        %\resumeSubSubheading{Slides: \href{https://speakerdeck.com/david74chou}{https://speakerdeck.com/david74chou}}{}
+        %\vspace{-10pt}
+        \resumeSubSubheading{Fuzzy test in Go}{COSCUP 2021}
+        \resumeSubSubheading{Let’s talk about testing in Go}{COSCUP 2020}
+        \resumeSubSubheading{Centralized Logging Solution using FireLens and Fluent Bit for ECS}{AWS Workshop 2020}
+        \resumeSubSubheading{How the Go runtime implement map efficiently}{Golang Taipei Meetup 2018}
+        \resumeSubSubheading{AV1: The next generation video codec}{Taiwan Streaming Meetup 2018}
+        \resumeSubSubheading{Golang execution modes}{iThome Gopher Day 2017}
+        \resumeSubSubheading{Building microservice with gRPC in Golang}{Google I/O Extended Taipei 2017}
+    \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Open Source Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{\href{https://github.com/david7482/lambda-extension-log-shipper}{lambda-extension-log-shipper}} $|$ \emph{Golang, Lambda}}
+          \resumeItemListStart
+            \resumeItem{Ship your Lambda logs directly to any destination and bypass Cloudwatch Logs to save cost.}
+            \resumeItem{This is my personal project that works like a log collection sidecar of the Lambda function by using Lambda Logs API.}
+          \resumeItemListEnd
+          \vspace{-22pt}
+        \resumeProjectHeading
+          {\textbf{\href{https://github.com/hashicorp/terraform-provider-aws}{terraform-provider-aws}} $|$ \emph{Golang, Terraform}}
+          \resumeItemListStart
+            \resumeItem{A well-known terraform plugin to provision AWS resources.}
+            \resumeItem{Contributed the EKS taint support in the Managed Node Group resource.}
+          \resumeItemListEnd
+          \vspace{-22pt}
+        \resumeProjectHeading
+          {\textbf{\href{https://github.com/influxdata/telegraf}{telegraf}} $|$ \emph{Golang}}
+          \resumeItemListStart
+            \resumeItem{A popular opensource metrics collection agent from influxdata.}
+            \resumeItem{Contributed a performance optimization in its AWS Cloudwatch integration.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+%\vspace{-15pt}
+
+%
+%-----------SKILLS-----------
+\section{Skills}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{Development}}
+          \resumeItemListStart
+            \resumeItem{\textbf{Languages}{: Golang, C/C++, Java, C\#}}
+            \resumeItem{\textbf{Databases}{: MySQL, MongoDB, Etcd}}
+            \resumeItem{\textbf{Protocols}{: HTTP, Websocket, gRPC, SMTP}}
+          \resumeItemListEnd
+          {\textbf{Infrastructure \& Operations}}
+          \vspace{-8pt}
+          \resumeItemListStart
+            \resumeItem{\textbf{AWS}{: S3, EC2, ECS, EKS, SQS, VPC, IAM, Lambda, EventBridge, Cloudfront, API Gateway}}
+            \resumeItem{\textbf{Container Orchestration}{: Kubernetes, ECS}}
+            \resumeItem{\textbf{IaC}{: Terraform, Helm, Packer, Ansible, Serverless}}
+            \resumeItem{\textbf{CI/CD}{: Jenkins, Github Action}}
+            \resumeItem{\textbf{Monitoring \& Logs}{: Telegraf, Prometheus, Grafana, Fluentd, Fluentbit, Elasticsearch, Kibana, New Relic}}
+          \resumeItemListEnd
+          {\textbf{Multimedia}}
+          \vspace{-8pt}
+          \resumeItemListStart
+            \resumeItem{\textbf{Codecs}{: H.264}}
+            \resumeItem{\textbf{Streaming}{: RTSP, HLS, DASH}}
+            \resumeItem{\textbf{Framework}{: FFMPEG, Live555, GStreamer}}
+            \resumeItem{\textbf{Acceleration}{: DxVA, SIMD}}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\vspace{-10pt}
+
+\end{document}
