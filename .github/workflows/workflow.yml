@@ -18,11 +18,6 @@ jobs:
         with:
           root_file: resume.tex
 
-      - uses: actions/upload-artifact@v2
-        with:
-          name: resume
-          path: resume.pdf
-
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
