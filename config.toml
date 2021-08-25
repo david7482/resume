@@ -91,7 +91,7 @@ googleAnalytics = "UA-XXXXXXX-Y"
         [[params.experience.list]]
         title = "Engineering Team Lead"
         dates = "2015 - 2021"
-        company = "Umbo"
+        company = "Umbo Computer Vision Inc."
         details = """Umbo is an A.I. startup that leverages machine learning and cloud technology to build
         autonomous video security systems for businesses. As a founding engineer, I participated in the whole
         architecture design and product implementation from scratch. As an engineering team lead, I mentored, sponsored
@@ -115,16 +115,15 @@ googleAnalytics = "UA-XXXXXXX-Y"
         details = """**Cross-team collaboration**
         \nFrequently co-worked with different teams, such as Design, Product and Sales, to help them from
         different approaches, such as studying competitor, discussing product roadmap, joining customer
-        concalls, and solving technical issues, etc.
+        concalls, etc.
         """
 
         [[params.experience.list.items]]
         details = "Architect and engineering"
         [[params.experience.list.items.subs]]
         details = """**Low latency video streaming service (Golang)**
-        \nDesigned and developed Umbo's video streaming service on a large scale across multiple regions. It became
-        the core architecture of Umbo's streaming-based product and served more than 7500 online cameras with below
-        3 seconds end-to-end latency.
+        \nDesigned and developed Umbo's video streaming service on a large scale across multiple regions. It was
+        the core architecture of Umbo and served more than 7500 cameras with below 3 seconds latency.
         """
         [[params.experience.list.items.subs]]
         details = """**IoT messaging service (Golang)**
@@ -132,23 +131,16 @@ googleAnalytics = "UA-XXXXXXX-Y"
         and served all Umbo's cameras across 4 different regions.
         """
         [[params.experience.list.items.subs]]
-        details = """**Firmware applications development (C/C++)**
-        \nInvolved in firmware architecture design and development, such as firmware application, designing IPC protocol
-        and service configuration, etc. Designed a flexible cross-platform firmware architecture that helps us to deliver
-        different camera models efficiently.
-        """
-        [[params.experience.list.items.subs]]
-        details = """**Windows-based service development (Golang)**
-        \nDeveloped a Windows background service that bridged Umbo alerts into 3rd-party systems under a constrained network
-        environment. I packaged the installation process into wizard that set up auto-start, restart-on-failure, and
-        log collection sidecar. This project helped Umbo win 2 enterprise customers.
-        """
-        [[params.experience.list.items.subs]]
         details = """**Launch a new product - Event Filter (Golang)**
-        \nInvolved in the completed product launch lifecycle from market research, competitor studying, product
+        \nInvolved in the completed product lifecycle from market research, competitor studying, product
         design, development, and launching. Engineering-wise, I implemented 2 gateway services (SMTP and HTTP) and
-        deployed them to ECS Fargate with Terraform. As a result, Event-Filter reduced 83% of false alarms for customers
-        and boosted Umbo’s monthly recurring revenue (MRR) by 230% in a year.
+        deployed to ECS Fargate with Terraform. As a result, it reduced 83% of false alarms for customers
+        and boosted Umbo’s monthly recurring revenue (MRR) by 230%.
+        """
+        [[params.experience.list.items.subs]]
+        details = """**Firmware applications development (C/C++)**
+        \nInvolved in firmware architecture design and development. Designed a flexible cross-platform firmware
+        architecture that helps us to deliver different camera models efficiently.
         """
 
         [[params.experience.list.items]]
@@ -156,8 +148,8 @@ googleAnalytics = "UA-XXXXXXX-Y"
         [[params.experience.list.items.subs]]
         details = """**Standardlized production service deployment**
         \n Standardlized a consistent service deployment by using AWS ECS Fargate and Terraform. Different services
-        could use the same way for secret management, log collection, monitoring, tracing, etc. It drastically reduced
-        the loading of operation and speeded up the launch of new services by 300%.
+        could use the same way for secret management, log collection, monitoring, etc. It drastically reduced
+        the operation loading and speeded up the launch of new services by 300%.
         """
         [[params.experience.list.items.subs]]
         details = """**Cross-services tracing solution**
@@ -165,16 +157,15 @@ googleAnalytics = "UA-XXXXXXX-Y"
         us a clear view of end-to-end latency, and we built monitoring and alerting based on the metrics.
         """
         [[params.experience.list.items.subs]]
-        details = """**Reduce AWS infrastructure costs**
-        \nLed and supported the team to continuously reduce AWS costs. I regularly reviewed AWS cost analysis and proposed
-        different approaches for cost reduction, including NAT traffic reduction, EC2/Fargate Spot adoption,
-        EC2 ARM instance adoption, cross-zone traffic reduction, S3 lifecycle optimization, etc. As a result, we reduced
-        54% unit cost by average.
+        details = """**Optimize AWS infrastructure costs**
+        \nLed and supported the team to continuously optimize AWS costs. I regularly reviewed AWS cost analysis and proposed
+        different approaches, including EC2/Fargate Spot and ARM instance adoption, NAT and cross-zone traffic reduction,
+        S3 lifecycle optimization. As a result, we reduced 54% AWS system cost under the same business scale.
         """
         [[params.experience.list.items.subs]]
-        details = """**AWS infrastructure administration**
-        \nAs an AWS architect of the team, I managed shared infrastructure, such as IAM, VPC, purchasing RI/saving plan,
-        building common AMI, etc. I migrated internal services (e.g., Grafana, Metabase, ETL jobs, etc) to EKS by using
+        details = """**Internal infrastructure administration**
+        \nAs an AWS architect of the team, I managed shared resources, such as IAM, VPC, purchasing RI/saving plan,
+        building common AMI. I migrated internal services (e.g., Grafana, Sentry, ETL jobs) to EKS by using
         Terraform and Helm. I also optimized the performance of the log collection pipeline by fine-tuning Fluentd
         aggregator and ElasticSearch.
         """
@@ -269,7 +260,7 @@ googleAnalytics = "UA-XXXXXXX-Y"
         [[params.information.list.items]]
         details = "**Languages:** Golang, C/C++, Java, C#"
         [[params.information.list.items]]
-        details = "**Databases:** MySQL, MongoDB, etcd"
+        details = "**Databases:** MySQL, MongoDB, Etcd"
         [[params.information.list.items]]
         details = "**Protocols:** HTTP, Websocket, gRPC, SMTP"
 
@@ -284,9 +275,7 @@ googleAnalytics = "UA-XXXXXXX-Y"
         [[params.information.list.items]]
         details = "**CI/CD:** Jenkins, Github Action"
         [[params.information.list.items]]
-        details = "**Logs:** Fluentd, Fluentbit, Elasticsearch, Kibana"
-        [[params.information.list.items]]
-        details = "**Metrics:** Telegraf, Prometheus, Grafana"
+        details = "**Monitoring & Logs:** Telegraf, Prometheus, Grafana, Fluentd, Fluentbit, Elasticsearch, Kibana, New Relic"
 
         [[params.information.list]]
         title = "Multimedia"
@@ -297,7 +286,7 @@ googleAnalytics = "UA-XXXXXXX-Y"
         [[params.information.list.items]]
         details = "**Streaming:** RTSP, HLS, DASH"
         [[params.information.list.items]]
-        details = "**Framework:** FFMPEG, Live555, GStreamer"
+        details = "**Frameworks:** FFMPEG, Live555, GStreamer"
         [[params.information.list.items]]
         details = "**Acceleration:** DxVA, SIMD"
 

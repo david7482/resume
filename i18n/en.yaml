@@ -11,7 +11,7 @@
 - id: languages
   translation: Languages
 - id: projects
-  translation: Side Projects And Open Source
+  translation: Open Source Projects
 - id: skills
   translation: Skills
 - id: talks
