@@ -39,6 +39,10 @@ googleAnalytics = "UA-XXXXXXX-Y"
         icon = "fab fa-slideshare"
         url = "https://speakerdeck.com/david74chou"
         text = "speakerdeck.com/david74chou"
+        [[params.contact.list]]
+        icon = "fas fa-file-pdf"
+        url = "https://me.david74.dev/david-chou.pdf"
+        text = "pdf version"
 
     [params.summary]
     enable = true
