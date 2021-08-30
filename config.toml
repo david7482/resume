@@ -13,7 +13,7 @@ googleAnalytics = "UA-XXXXXXX-Y"
         enable = true
         name = "David Chou"
         tagline = ""
-        description = "Golang developer, DevOps engineer, Community participant"
+        description = "Golang developer, DevOps engineer, Engineering team lead, Community participant"
         avatar = "avatar.png"
 
     [params.contact]
@@ -237,7 +237,7 @@ googleAnalytics = "UA-XXXXXXX-Y"
     [params.talks]
         enable = true
         details = """Given technical talks in several meetups and conferences, such as COSCUP, Google I/O Extended Taipei,
-        iThome Gopher Day, Golang Taipei Meetup, and Taiwan Streaming Meetup, topics including golang, software testing,
+        iThome Gopher Day, Golang Taiwan Meetup, and Taiwan Streaming Meetup, topics including golang, software testing,
         centralized logging, and video codec. Slides: https://speakerdeck.com/david74chou
         """
 
@@ -248,7 +248,7 @@ googleAnalytics = "UA-XXXXXXX-Y"
         [[params.talks.list]]
         details="Centralized Logging Solution using FireLens and Fluent Bit for ECS @ AWS Workshop 2020"
         [[params.talks.list]]
-        details="How the Go runtime implement map efficiently @ Golang Taipei Meetup 2018"
+        details="How the Go runtime implement map efficiently @ Golang Taiwan Meetup 2018"
         [[params.talks.list]]
         details="AV1: The next generation video codec @ Taiwan Streaming Meetup 2018"
         [[params.talks.list]]
