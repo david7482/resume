@@ -31,7 +31,7 @@ disableKinds = ["taxonomy", "term"]
         text = "david74.chou@gmail.com"
         [[params.contact.list]]
         icon = "fab fa-linkedin"
-        url = "https://www.linkedin.com/in/ting-li-chou-55393662/"
+        url = "https://www.linkedin.com/in/ting-li-chou/"
         text = "Ting-Li Chou"
         [[params.contact.list]]
         icon = "fab fa-github"
