@@ -3,6 +3,12 @@ languageCode = "en"
 title = "David Chou"
 theme = "hugo-devresume-theme"
 googleAnalytics = "G-FPJMFH212V"
+disableKinds = ["taxonomy", "term"]
+
+[sitemap]
+    changefreq = 'weekly'
+    filename = 'sitemap.xml'
+    priority = 0.5
 
 [params]
     author = "David Chou"
