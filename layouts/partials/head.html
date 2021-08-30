@@ -24,3 +24,6 @@
     <meta property="og:url" content="{{ .Permalink }}" />
     <meta property="og:image" content="{{ .Site.BaseURL }}assets/images/{{ .Site.Params.profile.avatar }}" />
     <meta property="og:description" content="{{ .Site.Params.profile.description }}" />
+
+    <!-- Add GA4 support -->
+    {{ template "_internal/google_analytics.html" . }}

@@ -2,7 +2,7 @@ baseURL = "https://me.david74.dev/"
 languageCode = "en"
 title = "David Chou"
 theme = "hugo-devresume-theme"
-googleAnalytics = "UA-XXXXXXX-Y"
+googleAnalytics = "G-FPJMFH212V"
 
 [params]
     author = "David Chou"
