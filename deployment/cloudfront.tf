@@ -2,6 +2,14 @@ resource "aws_cloudfront_origin_access_identity" "origin_access_identity" {
   comment = var.website_name
 }
 
+resource "aws_cloudfront_function" "security" {
+  name    = "add-security-headers"
+  runtime = "cloudfront-js-1.0"
+  comment = "add-security-headers"
+  publish = true
+  code    = file("${path.module}/js/add-security-headers.js")
+}
+
 resource "aws_cloudfront_distribution" "website" {
   enabled             = true
   is_ipv6_enabled     = true
@@ -42,6 +50,11 @@ resource "aws_cloudfront_distribution" "website" {
       cookies {
         forward = "none"
       }
+    }
+
+    function_association {
+      event_type   = "viewer-response"
+      function_arn = aws_cloudfront_function.security.arn
     }
   }
 
